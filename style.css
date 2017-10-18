@@ -1,0 +1,196 @@
+*{
+  text-align:left;
+}
+
+html body {
+
+  text-align: left;
+  background-image:url( background.jpg);
+  height:auto;
+
+}
+
+#container {
+  margin: 2% 5%;
+  height:auto;
+  width:90%;
+}
+
+#content {
+	float:left;
+	width:50%;
+  margin: 10px 25% 20px 0;
+	height:auto;
+	background:#b3ffe6;
+  padding: 5px;
+	border-radius:10px;
+	border:6px solid #1C478E;
+}
+
+.left{
+  float:left;
+  width:15%;
+  margin: 10px 5% 40px 5%;
+}
+
+.box {
+	background-color:red;
+  border:5px solid #518281;
+
+}
+
+#loginbox {
+	background-color:skyblue;
+  color: maroon;
+  border:5px solid #518281;
+
+}
+
+.box p {
+	color:white;
+  font-size: 25px;
+  text-align: center;
+  margin:auto;
+  padding: 2%;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  100% { opacity: 0.0; }
+}
+
+table.ctable, table.ctable th, table.ctable td{
+	border:1px solid #000000;
+	background-color: #b3ffec;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table.search td {
+  text-align: left !important;
+}
+
+th{
+  text-align: center;
+  text-decoration:none;
+}
+
+td{
+  text-decoration:none;
+  text-align: center;
+}
+
+
+table.ftable{
+  border: none;
+}
+
+
+
+.form p{
+  padding: 1%;
+}
+
+#map {
+  float:left;
+  width:50%;
+  margin: 10px 25% 0 25%;
+  height:auto;
+  padding: 25% 0;
+  border-radius:10px;
+  border:2px solid #1C478E;
+}
+#button {
+  float:left;
+  width:50%;
+  margin: 0 25% 40px 25%;
+}
+
+#header{
+  background-color:#6D1818;
+  color:#659267;
+  text-align:center;
+  font-size: 50px;
+  max-width:100%;
+}
+
+#header2 {
+  color:blue;
+  font-style: italic;
+  text-align: center;
+}
+
+#menu {
+   display: block;
+   float: left;
+   clear: both;
+   width:100%;
+   height: 54px;
+   margin-bottom: 1%;
+}
+
+#menu a:active{
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#menu a:visited{
+  color:#6D1818;
+  background-color:red;
+  text-decoration: none;
+}
+
+#menu a:hover{
+  color:#ff661a;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#menu a{
+  text-decoration: none;
+  height:36px;
+  float: left;
+  display: block;
+  text-align: center;
+  color: #cd5592;
+  font-weight: bold;
+  padding: 18px 13px 0 13px;
+  font-size: 20px;
+}
+
+#jform td {
+  text-align: left;
+}
+
+
+ul {
+  list-style: none;
+  padding:0;
+  margin-left: auto;
+  max-width:70%;
+}
+ li{
+  display:inline;
+  list-style: none;
+  padding: 0;
+}
+
+#info a {
+  display: block;
+  text-decoration: none;
+  color:green;
+}
+
+#loadForm {
+  float:left;
+	width:50%;
+  margin: 5px 25% 40px 25%;
+}
+
+#target {
+  float:left;
+	width:50%;
+  margin: 5px 25% 40px 0;
+  background:#ffcc66;
+}

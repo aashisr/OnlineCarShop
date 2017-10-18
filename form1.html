@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+      <div id="jform">
+        <form action="http://users.metropolia.fi/~juhov/webP/formTest.php" method="POST">
+            <p>Please fill in this contact form:</p>
+        <table>
+        <tr>
+          <td>First Name:</td>
+          <td><input type = "text"></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type = "text"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type = "text"></td>
+        </tr>
+        <tr>
+          <td></td><td><input type="submit" value="Send"></td>
+        </tr>
+      </table>
+    </form>
+      </div>
+
+
+      <script>
+             $("input").focus(function () {
+                 $(this).css({"background":"orange"});
+                 $(this).prev().css({"font-weight":"bold"});
+             });
+             $("input").focusout(function () {
+                 $(this).css({"background":"white"});
+                 $(this).prev().css({"font-weight":"normal"});
+             });
+         </script>
+
+  </body>
+</html>

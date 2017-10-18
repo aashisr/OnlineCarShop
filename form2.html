@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <script src="jquery.js"></script>
+   <script>
+           $("input").focus(function () {
+               $(this).css({"background":"orange"});
+               $(this).prev().css({"font-weight":"bold"});
+           });
+           $("input").focusout(function () {
+               $(this).css({"background":"white"});
+               $(this).prev().css({"font-weight":"normal"});
+           });
+       </script>
+  </head>
+
+  <body>
+      <div id="jform">
+        <form action="http://users.metropolia.fi/~juhov/webP/formTest.php" method="POST">
+            <p>Please fill in to receive our newsletter:</p>
+          <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type = "text"></td>
+        </tr>
+        <tr>
+          <td>Interests:</td>
+          <td><input type = "text"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type = "text"></td>
+        </tr>
+        <tr>
+          <td></td><td><input type="submit" value="Send"></td>
+        </tr>
+      </table>
+    </form>
+      </div>
+  </body>
+</html>
