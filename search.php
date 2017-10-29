@@ -4,9 +4,17 @@
 ?>
 
 </div> <!-- left ends -->
-
+<script>
+function validateForm() {
+  var x = document.forms["searchform"]["ccompany"].value;
+  if (x == null || x = "") {
+    alert("Please fill in this field.");
+    return false;
+  }
+}
+</script>
   <div id = "content">
-    <form name ="searchform" action ="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"]); ?>" onsubmit = " validateForm()" method ="POST">
+    <form name ="searchform" action ="<?php echo htmlspecialchars( $_SERVER["PHP_SELF"]); ?>" onsubmit = "return validateForm()" method ="POST">
         <p>Please fill in the vehicle information and we will find the suitable car for you:</p>
       <table class="search">
         <tr>

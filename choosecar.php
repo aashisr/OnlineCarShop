@@ -1,4 +1,5 @@
-<?php                                          
+<!-- Checks login and if not correct, redirects to login.php  -->
+<?php
 	session_start();
 	if(!isset($_SESSION["login"]))
 		header("location:login.php");

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Matching game</title>
+		<style>
+			img {
+				position: absolute;
+			}
+
+			div {
+				position: absolute;
+				width: 500px;
+				height: 500px;
+			}
+
+			#rightSide {
+				margin-left: 500px;
+				border-left: 1px solid black;
+			}
+
+			#instructions {
+				margin-bottom: 2%;
+				margin-left: 20%;
+				float: left;
+				clear: both;
+				text-align: center;
+			}
+
+			#game {
+				margin-top: 4%;
+			}
+
+		</style>
+
+		<script>
+			var numberOfFaces = 5;
+
+			function generateFaces() {
+				//Left side images
+				var theLeftSide = document.getElementById("leftSide");
+
+				for(var faces = numberOfFaces; faces>0;faces-- ) {
+					var img = document.createElement("img");
+					img.src = "http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png";
+					
+
+				var top = Math.floor(Math.random()*400);
+				var left = Math.floor(Math.random()*400);
+
+				img.style.top = top + "px";
+				img.style.left = left + "px";
+
+				theLeftSide.appendChild(img);
+				}
+				//Right side images
+
+				var theRightSide = document.getElementById("rightSide");
+				var leftSideImages = theLeftSide.cloneNode(true);
+
+				leftSideImages.removeChild(leftSideImages.lastChild);
+				theRightSide.appendChild(leftSideImages);
+
+				//Part 4- Finishing the Game
+
+				var theBody = document.getElementsByTagName("body")[0];
+				
+
+				theLeftSide.lastChild.onclick = 
+					function nextLevel(event) {
+						event.stopPropagation();
+						//Delete all faces and start over
+						var leftSide = document.getElementById("leftSide");
+						while(leftSide.firstChild) {  //while there is a child
+							leftSide.removeChild(leftSide.firstChild);
+						}
+
+						var rightSide = document.getElementById("rightSide");
+						while(rightSide.firstChild) {  //while there is a child
+							rightSide.removeChild(rightSide.firstChild);
+						}
+					
+						numberOfFaces += 5;
+						generateFaces();
+				};
+
+				theBody.onclick = function gameOver() {
+					alert("Game Over!!");
+
+					theBody.onclick = null;
+					theLeftSide.lastChild.onclick = null;
+				};
+			}		
+   		</script>
+	</head>
+	<body onload="generateFaces()">
+		<div id = "instructions">
+			<h4>Click on the extra face on the left hand side of your screen.<br> Keep on playing until you can :).</h4>	
+		</div>
+		<div id = "game">
+			<div id = "leftSide"></div>
+			<div id = "rightSide"></div>
+		</div>
+	</body>
+</html>

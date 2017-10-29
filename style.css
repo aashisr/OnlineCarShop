@@ -5,7 +5,7 @@
 html body {
 
   text-align: left;
-  background-image:url( background.jpg);
+  background-image:url("Images/background.jpg");
   height:auto;
 
 }

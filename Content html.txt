@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sukky Cars Ltd</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<form action= "cars.php" method="post">
+</head>
+
+<body>
+
+<div id="container"> <!--container starts-->
+	<h1 id="header">Sukky Cars Ltd</h1>
+	<h3 id="header2">"Sukky Cars Ltd, When you have a fistful of dollars."</h3>
+
+
+
+<br>
+<br>
+<br>
+
+<div id="menu"> <!--menu starts-->
+		<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="information.html">Information</a></li>
+				<li><a href="warranty.html">Warranty</a></li>
+				<li><a href="cars.html">Cars</a></li>
+				<li><a href="#">TestPage2</a></li>
+		</ul>
+</div>
+
+<div id ="box">
+	<p>Best DEALS</p>
+</div>
+
+<div id="content">
+
+
+
+
+
+
+
+	</div>   <!--content ends-->
+	</div>   <!--container ends-->
+</body>
+</html>
