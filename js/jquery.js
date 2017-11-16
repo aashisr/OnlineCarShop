@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $("#contactForm").click(function() {
-    $("#target").load("form1.html");
+    $("#target").load("forms/form1.html");
   });
 
   $("#newsForm").click(function() {
-    $("#target").load("form2.html");
+    $("#target").load("forms/form2.html");
   });
 
 

@@ -55,7 +55,7 @@
 					<th>Contact</th>
 				</tr>
 				<tr>
-					<td><a href="form.php"><img class ="img-responsive" id="bmw650" height="200" width="280" src="Images/bmw650.jpg"  alt="BMW 650" title="Click for more info" ></a></td>
+					<td><a href="forms/form.php"><img class ="img-responsive" id="bmw650" height="200" width="280" src="Images/bmw650.jpg"  alt="BMW 650" title="Click for more info" ></a></td>
 					<td>BMW 650 <br/> (4.4) iA xDrive M Sport,<br/> Panorama, Bang & Olufsen,<br/> uuden hinta 220.000eur!</td>
 					<td>2012</td>
 					<td>12 000</td>
@@ -64,7 +64,7 @@
 				</tr>
 
 				<tr>
-					<td><a href="form.php"><img id="bmw740" height="200" width="280" src="Images/bmw740.jpg"  alt="BMW 740" title="Click for more info"></a></td>
+					<td><a href="forms/form.php"><img id="bmw740" height="200" width="280" src="Images/bmw740.jpg"  alt="BMW 740" title="Click for more info"></a></td>
 					<td>BMW 740 <br/> (3.0) d TwinPower Turbo A <br/> xDrive F01 Sedan</td>
 					<td>2012</td>
 					<td>1 000</td>
@@ -73,7 +73,7 @@
 				</tr>
 
 				<tr>
-					<td><a href="form.php"> <img id="bmwm5" src="Images/bmwm5.jpg" height="200" width="280" alt="BMW M5" title="Click for more info"></a></td>
+					<td><a href="forms/form.php"> <img id="bmwm5" src="Images/bmwm5.jpg" height="200" width="280" alt="BMW M5" title="Click for more info"></a></td>
 					<td>BMW M5 <br/> (4.4) Sedan F10 M5 4.4 L- <br/> V8-560hv/680Nm Twinturbo</td>
 					<td>2012</td>
 					<td>13 500</td>
@@ -82,7 +82,7 @@
 				</tr>
 
 				<tr>
-					<td><a href="form.php"><img id="bmw740h" src="Images/bmw740h.jpg" height="200" width="280" alt="BMW 740" title="Click for more info"></a></td>
+					<td><a href="forms/form.php"><img id="bmw740h" src="Images/bmw740h.jpg" height="200" width="280" alt="BMW 740" title="Click for more info"></a></td>
 					<td>BMW 740 <br/> (3.0) d TwinPower Turbo A <br/> xDrive F01 Sedan</td>
 					<td>2012</td>
 					<td>3 000</td>

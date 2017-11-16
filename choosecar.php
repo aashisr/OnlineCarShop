@@ -40,7 +40,7 @@
 $cars="";
 if (isset($_GET["submit"])) {
 	$selectedCar = $_GET["cars"];
-	$myFile = fopen("cars_lab4.txt","r") or die("Error in opening the file");
+	$myFile = fopen("text/cars_lab4.txt","r") or die("Error in opening the file");
 	//"r" - only read file
 
 	while (!feof($myFile)){       // !feof -Output a line of the file until the end is reached
