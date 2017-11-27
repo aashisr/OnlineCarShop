@@ -31,7 +31,17 @@
 			}
 
 		</style>
+	</head>
 
+	<body onload="generateFaces()">
+		<div id = "instructions">
+			<h4>Click on the extra face on the left hand side of your screen.<br> Keep on playing until you can :).</h4>	
+		</div>
+		<div id = "game">
+			<div id = "leftSide"></div>
+			<div id = "rightSide"></div>
+		</div>
+	
 		<script>
 			var numberOfFaces = 5;
 
@@ -44,18 +54,18 @@
 					img.src = "http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png";
 					
 
-				var top = Math.floor(Math.random()*400);
-				var left = Math.floor(Math.random()*400);
+					var top = Math.floor(Math.random()*400);
+					var left = Math.floor(Math.random()*400);
 
-				img.style.top = top + "px";
-				img.style.left = left + "px";
+					img.style.top = top + "px";
+					img.style.left = left + "px";
 
-				theLeftSide.appendChild(img);
+					theLeftSide.appendChild(img);
 				}
 				//Right side images
 
 				var theRightSide = document.getElementById("rightSide");
-				var leftSideImages = theLeftSide.cloneNode(true);
+				var leftSideImages = theLeftSide.cloneNode(true); //Copies "theLeftSide" elements and its attributes
 
 				leftSideImages.removeChild(leftSideImages.lastChild);
 				theRightSide.appendChild(leftSideImages);
@@ -67,7 +77,7 @@
 
 				theLeftSide.lastChild.onclick = 
 					function nextLevel(event) {
-						event.stopPropagation();
+						event.stopPropagation(); //Stops bubbling of an element to parent elements, preventing any parent event handlers from being executed
 						//Delete all faces and start over
 						var leftSide = document.getElementById("leftSide");
 						while(leftSide.firstChild) {  //while there is a child
@@ -86,19 +96,10 @@
 				theBody.onclick = function gameOver() {
 					alert("Game Over!!");
 
-					theBody.onclick = null;
-					theLeftSide.lastChild.onclick = null;
+					theBody.onclick = null; //Don't execute anything when clicked on theBody
+					theLeftSide.lastChild.onclick = null; //Don't execute anything even if last child is clicked
 				};
 			}		
    		</script>
-	</head>
-	<body onload="generateFaces()">
-		<div id = "instructions">
-			<h4>Click on the extra face on the left hand side of your screen.<br> Keep on playing until you can :).</h4>	
-		</div>
-		<div id = "game">
-			<div id = "leftSide"></div>
-			<div id = "rightSide"></div>
-		</div>
 	</body>
 </html>
