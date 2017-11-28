@@ -40,17 +40,17 @@
 $cars="";
 if (isset($_GET["submit"])) {
 	$selectedCar = $_GET["cars"];
-	$myFile = fopen("text/cars_lab4.txt","r") or die("Error in opening the file");
+	$myFile = fopen("text/cars_lab4.txt","r") or die("Error in opening the file"); //Opens a file
 	//"r" - only read file
 
-	while (!feof($myFile)){       // !feof -Output a line of the file until the end is reached
-		$line[] = fgets($myFile);  //fgets — Gets a single line from file pointer
+	while (!feof($myFile)){       // feof -checks if the "end-of-file" has been reached
+		$line[] = fgets($myFile);  //fgets — Gets a single line from an open file
 		//Get the every line from the whole text file and store each Line as a arrary.
 	}
 
 for($i = 0; $i<count($line); $i++) {
 	$indi[] = explode("|",$line[$i]);  //explode — Split a string by string
-		//Break the text spearated with demiliter | and store the result in another arrray. So There indi in Two dimensional arrary now.
+		//Break the text spearated with demiliter | and store the result in another arrray. So There indi is Two dimensional arrary now.
 }
 
 if ($selectedCar =="bmw"){
@@ -89,13 +89,14 @@ else if ($selectedCar =="seat") {
 	$carBrand = $indi[4] [0];
 }
 else {
-								foreach ($indi as $v3) {
-										foreach ($v3 as $v4) {
-												echo($v4);
-												echo "<br>";
-										}
-								}
-						}
+		//foreach works only on array and is used to loop through each key/value pair in an array
+		foreach ($indi as $v3) {    //foreach ($array as $value)
+			foreach ($v3 as $v4) {
+				echo($v4);
+				echo "<br>";
+			}
+		}
+	}
 ?>
 
 <table class ="ctable">

@@ -7,10 +7,10 @@
 		<link rel = "icon" type = "image/png" href ="icon.png">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-		<script src = "js/myscript.js" type="text/javascript"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqBvTBZk3BD3MOiWiQEXL3Zg0YV4PL900&callback=initMap" async defer></script> 																																															<!--Source for map-->
 		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src = "js/myscript.js" type="text/javascript"></script>
 	</head>
 
 	<body>
